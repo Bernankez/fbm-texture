@@ -45,7 +45,7 @@ importers:
         specifier: ^0.34.6
         version: 0.34.6
 
-  docs:
+  playground:
     dependencies:
       react:
         specifier: ^18.2.0
