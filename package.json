@@ -1,5 +1,5 @@
 {
-  "name": "fbm-converter",
+  "name": "fbm-generator",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.10.0",
@@ -10,12 +10,12 @@
     "url": "https://github.com/Bernankez"
   },
   "license": "MIT",
-  "homepage": "https://github.com/Bernankez/FBM-Converter#readme",
+  "homepage": "https://github.com/Bernankez/fbm-generator#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bernankez/FBM-Converter.git"
+    "url": "git+https://github.com/Bernankez/fbm-generator.git"
   },
-  "bugs": "https://github.com/Bernankez/FBM-Converter/issues",
+  "bugs": "https://github.com/Bernankez/fbm-generator/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -45,6 +45,8 @@
     "prepublishOnly": "pnpm build",
     "dev": "unbuild --stub",
     "build": "unbuild",
+    "play": "pnpm -F ./playground dev",
+    "play:build": "pnpm -F ./playground build",
     "start": "tsx src/index.ts",
     "watch": "tsx watch src/index.ts",
     "release": "bumpp && pnpm publish",
@@ -72,7 +74,7 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*.{vue,ts,tsx}": "eslint --fix"
   },
   "publishConfig": {
     "access": "public"

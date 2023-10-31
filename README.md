@@ -1,5 +1,5 @@
 <p align="center">
-  <strong>📦 FBM Converter</strong><br><br>
+  <strong>📦 FBM Generator</strong><br><br>
   Starter template for library using unbuild<br>
 </p>
 
@@ -30,5 +30,5 @@ Automatically generate changelog by [changelogithub](https://github.com/antfu/ch
 
 ### Getting Started
 
-- [ ] Set your Action secret via [GitHub](https://github.com/Bernankez/FBM Converter/settings/secrets/actions). Secret name is `TOKEN`. [Learn more about encrypted secrets.](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+- [ ] Set your Action secret via [GitHub](https://github.com/Bernankez/fbm-generator/settings/secrets/actions). Secret name is `TOKEN`. [Learn more about encrypted secrets.](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 - [ ] Check and supplement the additional information in `package.json`
