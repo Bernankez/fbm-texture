@@ -7,7 +7,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs", "**/*.md"],
+  ignorePatterns: ["dist", ".eslintrc.cjs", "**/*.md", "tsconfig.*", "package.json"],
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh"],
   rules: {
