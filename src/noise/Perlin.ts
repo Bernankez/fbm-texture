@@ -24,7 +24,7 @@ function perlinDot(g: [number, number, number], x: number, y: number, z: number)
   return g[0] * x + g[1] * y + g[2] * z;
 }
 
-export function generateNoise(x: number, y: number, z: number) {
+export function perlin(x: number, y: number, z: number) {
   // Find unit grid cell containing point
   let X = Math.floor(x);
   let Y = Math.floor(y);
