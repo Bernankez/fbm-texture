@@ -103,7 +103,6 @@ export function drawImage(image: HTMLCanvasElement, options?: DrawImageOptions) 
       color: [...color, Math.floor(Math.random() * 255)],
     }));
   }
-  console.log(baseColor, paramsOptions, image.width, image.height);
   return drawTexture({
     fn,
     width: width || image.width,
