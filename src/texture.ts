@@ -59,5 +59,10 @@ export function drawTexture(options: DrawTextureOptions) {
     }
   }
   context.putImageData(imageDataObject, 0, 0);
-  return canvas;
+
+  return {
+    canvas,
+    baseColor,
+    paletteColor: noise.map(n => n.color),
+  };
 }

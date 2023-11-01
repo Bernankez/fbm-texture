@@ -75,7 +75,7 @@ export function drawImage(image: HTMLCanvasElement, options?: DrawImageOptions) 
       noise: params,
     });
   }
-  const palette = getPalette(image);
+  const palette = getPalette(image, 5);
   if (!palette) {
     throw new Error("Could not get palette");
   }
