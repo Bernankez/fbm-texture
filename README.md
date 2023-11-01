@@ -1,34 +1,54 @@
-<p align="center">
-  <strong>📦 FBM Generator</strong><br><br>
-  Starter template for library using unbuild<br>
-</p>
+# FBM Generator
 
-### 🪄 Automated config
+## Environment
 
-Automagically infer build config and entries from package.json. Powered by [unbuild](https://github.com/unjs/unbuild).
+Browser
 
-### ✨ Passive watcher
+## Install
 
-Stub `dist` once using [unbuild](https://github.com/unjs/unbuild) or continuously
-monitor file changes using [tsx](https://github.com/esbuild-kit/tsx).
+```bash
+$ pnpm add fbm-generator
+```
 
-### 🚀 Blazing fast Unit Test framework
+## Usage
 
-Integration with [Vitest](https://vitest.dev/).
+```ts
+import { drawImageAsync } from "fbm-generator";
 
-### 🪝 Lightweight git hooks
+const image = new Image();
+image.src = "image-path";
+const { canvas } = await drawImageAsync(image);
+document.body.appendChild(canvas);
+```
 
-Easily manage git hooks with [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks).
+## Type Declaration
 
-### 🏄 Interactively bump version number
+```ts
+type ParamsFn = (color: [number, number, number, number]) => {
+  numOctaves: number;
+  attenuation: number;
+  roughness: number;
+  startingOctave: number;
+};
 
-Introducing by [bumpp](https://github.com/antfu/bumpp).
+type ParamsOptions = {
+  numOctaves: number;
+  attenuation: number;
+  roughness: number;
+  startingOctave: number;
+  color: [number, number, number, number];
+}[];
 
-### 🚗 Automated changelog
+interface DrawImageOptions {
+  fn?: NoiseFn;
+  width?: number;
+  height?: number;
+  baseColor?: [number, number, number, number];
+  wrap?: boolean;
+  params?: ParamsOptions | ParamsFn;
+};
 
-Automatically generate changelog by [changelogithub](https://github.com/antfu/changelogithub).
+declare function drawImage(image: HTMLCanvasElement, options?: DrawImageOptions): void;
 
-### Getting Started
-
-- [ ] Set your Action secret via [GitHub](https://github.com/Bernankez/fbm-generator/settings/secrets/actions). Secret name is `TOKEN`. [Learn more about encrypted secrets.](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
-- [ ] Check and supplement the additional information in `package.json`
+declare function drawImageAsync(image: HTMLImageElement | string | Blob | HTMLCanvasElement, options?: DrawImageOptions): void;
+```
