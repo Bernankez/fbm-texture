@@ -1,5 +1,5 @@
 {
-  "name": "fbm-generator",
+  "name": "fbm-texture",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.10.0",
@@ -10,12 +10,12 @@
     "url": "https://github.com/Bernankez"
   },
   "license": "MIT",
-  "homepage": "https://github.com/Bernankez/fbm-generator#readme",
+  "homepage": "https://github.com/Bernankez/fbm-texture#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bernankez/fbm-generator.git"
+    "url": "git+https://github.com/Bernankez/fbm-texture.git"
   },
-  "bugs": "https://github.com/Bernankez/fbm-generator/issues",
+  "bugs": "https://github.com/Bernankez/fbm-texture/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {

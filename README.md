@@ -1,4 +1,4 @@
-# FBM Generator
+# FBM Texture
 
 ## Environment
 
@@ -7,13 +7,13 @@ Browser
 ## Install
 
 ```bash
-$ pnpm add fbm-generator
+$ pnpm add fbm-texture
 ```
 
 ## Usage
 
 ```ts
-import { drawImageAsync } from "fbm-generator";
+import { drawImageAsync } from "fbm-texture";
 
 const image = new Image();
 image.src = "image-path";

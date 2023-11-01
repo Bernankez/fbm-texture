@@ -115,7 +115,7 @@ function App() {
 
   return (
     <div className="min-h-screen h-full flex flex-col gap-5 p-5 box-border">
-      <a className="flex ml-auto link" href="https://github.com/Bernankez/fbm-generator" target="_blank">GitHub</a>
+      <a className="flex ml-auto link" href="https://github.com/Bernankez/fbm-texture" target="_blank">GitHub</a>
       <div className="flex flex-col md:flex-row gap-5 items-center justify-center">
         <div className="flex flex-col items-center">
           <div className="flex flex-col gap-3">
